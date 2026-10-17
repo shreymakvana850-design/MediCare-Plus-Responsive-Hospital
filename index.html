@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MediCare Plus — compassionate care, trusted doctors, and patient-first healthcare.">
+  <title>MediCare Plus | Care That Comes First</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--teal:#0e9b91;--teal-dark:#087d76;--navy:#123044;--ink:#24384a;--muted:#6b7c8a;--pale:#eaf8f6;--line:#e3ecef;--coral:#ffb7a5}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{font-family:"DM Sans",sans-serif;color:var(--ink)}h1,h2,h3,h4,.navbar-brand{font-family:"Manrope",sans-serif}
+    .navbar{background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.navbar-brand{font-weight:800;color:var(--navy);letter-spacing:-.04em;font-size:1.3rem}.brand-icon{display:inline-grid;place-items:center;width:39px;height:39px;background:var(--teal);color:#fff;border-radius:13px;margin-right:9px;font-size:1.4rem}.nav-link{color:#5b6d7b;font-weight:600;font-size:.94rem;margin:0 .2rem}.nav-link:hover{color:var(--teal)}
+    .btn-teal{background:var(--teal);border:1px solid var(--teal);color:#fff;padding:12px 20px;border-radius:12px;font-weight:700;transition:.2s}.btn-teal:hover{background:var(--teal-dark);border-color:var(--teal-dark);color:#fff;transform:translateY(-2px)}.btn-outline-teal{border:1px solid #cbdedc;color:var(--navy);padding:12px 20px;border-radius:12px;font-weight:700;background:#fff}.btn-outline-teal:hover{border-color:var(--teal);color:var(--teal)}
+    .hero{background:radial-gradient(circle at 82% 20%,#d9f5ef 0,transparent 30%),linear-gradient(135deg,#f4fbfa,#fff 70%);padding:88px 0 78px;overflow:hidden}.eyebrow{color:var(--teal);font-size:.78rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.hero h1{font-weight:800;color:var(--navy);font-size:clamp(2.7rem,5.6vw,4.7rem);letter-spacing:-.06em;line-height:1.06}.hero h1 span{color:var(--teal)}.hero-copy{color:var(--muted);font-size:1.07rem;line-height:1.85;max-width:550px}.hero-visual{min-height:400px;display:grid;place-items:center;position:relative}.care-card{width:min(100%,430px);min-height:350px;border-radius:30px;background:linear-gradient(145deg,#119e94,#08746e);color:white;padding:30px;box-shadow:0 30px 70px rgba(14,155,145,.22);position:relative;overflow:hidden}.care-card:after{content:"";position:absolute;width:280px;height:280px;right:-90px;top:-100px;border:1px solid #ffffff40;border-radius:50%;box-shadow:0 0 0 28px #ffffff0c,0 0 0 60px #ffffff0a}.care-content{position:relative;z-index:1}.care-label{display:inline-block;border:1px solid #ffffff40;background:#ffffff20;border-radius:50px;padding:7px 12px;font-size:.8rem}.medical-symbol{width:86px;height:86px;border-radius:25px;background:white;color:var(--teal);display:grid;place-items:center;font-size:3rem;font-weight:800;margin:27px 0 20px;box-shadow:0 10px 25px #064f4a30}.floating{position:absolute;background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px 16px;box-shadow:0 15px 35px #12304418;color:var(--navy);font-weight:800}.floating small{display:block;color:var(--muted);font-weight:500}.float-a{top:25px;left:-8px}.float-b{bottom:17px;right:-6px}.section-pad{padding:90px 0}.section-title{font-size:clamp(2rem,4vw,3rem);font-weight:800;letter-spacing:-.05em;line-height:1.15;color:var(--navy)}.section-copy{color:var(--muted);line-height:1.8}.soft{background:#f5faf9}.service-card,.doctor-card,.step-card{height:100%;border:1px solid var(--line);border-radius:20px;padding:26px;background:#fff;transition:.25s}.service-card:hover,.doctor-card:hover,.step-card:hover{transform:translateY(-5px);border-color:#b7e4df;box-shadow:0 18px 40px #1230440d}.icon-box{width:53px;height:53px;border-radius:16px;display:grid;place-items:center;background:var(--pale);color:var(--teal);font-size:1.5rem;margin-bottom:20px}.service-card h3,.doctor-card h3,.step-card h3{font-size:1.12rem;font-weight:800;color:var(--navy)}.service-card p,.doctor-card p,.step-card p{font-size:.94rem;line-height:1.75;color:var(--muted);margin:0}.about-panel{background:var(--navy);border-radius:28px;padding:clamp(28px,5vw,54px);color:white;overflow:hidden;position:relative}.about-panel .section-title{color:white}.about-panel .section-copy{color:#c6d6de}.check-list{padding:0;list-style:none;margin:24px 0 0}.check-list li{display:flex;gap:11px;margin:13px 0;color:#f2f8fa}.check{flex:0 0 23px;height:23px;border-radius:50%;display:grid;place-items:center;background:#1a9d8b33;color:#8ff0d5;font-weight:800}.about-art{display:grid;place-items:center;min-height:290px;position:relative}.health-circle{width:230px;height:230px;border-radius:50%;border:1px solid #ffffff33;display:grid;place-items:center;position:relative}.health-circle:before,.health-circle:after{content:"";position:absolute;border:1px solid #ffffff25;border-radius:50%}.health-circle:before{inset:22px}.health-circle:after{inset:46px}.health-center{z-index:1;width:105px;height:105px;border-radius:30px;background:var(--coral);color:var(--navy);display:grid;place-items:center;font-size:3.1rem}.health-dot{position:absolute;width:44px;height:44px;border-radius:14px;background:#fff;color:var(--teal);display:grid;place-items:center;font-size:1.3rem}.hd-a{top:15px;left:44px}.hd-b{right:0;top:90px}.hd-c{bottom:14px;left:58px}.doctor-avatar{height:180px;background:linear-gradient(135deg,#e4f8f4,#f7fbff);display:grid;place-items:center;font-size:5rem}.doctor-card{padding:0;overflow:hidden}.doctor-body{padding:22px}.doctor-tag{font-size:.77rem;color:var(--teal-dark);background:var(--pale);border-radius:50px;padding:6px 10px;font-weight:800;display:inline-block;margin-bottom:12px}.steps-number{font-size:.8rem;font-weight:800;letter-spacing:.12em;color:var(--teal);margin-bottom:18px}.appointment-band{background:linear-gradient(115deg,#119e94,#08766f);color:white;border-radius:25px;padding:clamp(28px,5vw,50px);display:flex;align-items:center;justify-content:space-between;gap:25px}.appointment-band h2{font-size:clamp(1.8rem,3.5vw,2.7rem);font-weight:800;letter-spacing:-.04em}.appointment-band p{color:#dcf7f2;line-height:1.7;margin:0}.btn-white{background:white;color:var(--teal-dark);border:1px solid white;border-radius:12px;padding:13px 20px;font-weight:800;white-space:nowrap}.btn-white:hover{background:#eaf8f6;color:var(--teal-dark)}.contact-card{border:1px solid var(--line);border-radius:22px;padding:clamp(23px,4vw,38px);box-shadow:0 12px 35px #12304408}.form-control,.form-select{border-color:#dce7e9;border-radius:11px;padding:13px 14px}.form-control:focus,.form-select:focus{border-color:#78cfc5;box-shadow:0 0 0 .2rem #0e9b911a}.form-label{font-size:.9rem;font-weight:700;color:var(--navy)}.contact-row{display:flex;gap:14px;align-items:flex-start;margin:23px 0}.contact-row .icon-box{flex-shrink:0;width:46px;height:46px;margin:0}.contact-row strong{display:block;color:var(--navy);margin-bottom:4px}.contact-row span{color:var(--muted);font-size:.92rem}footer{background:#0b2030;color:#c1d0d9;padding:32px 0}footer a{color:#eaf8f6;text-decoration:none}.footer-brand{font-family:"Manrope",sans-serif;color:#fff;font-weight:800;font-size:1.2rem}.whatsapp-float{position:fixed;right:20px;bottom:20px;z-index:1000;width:55px;height:55px;border-radius:50%;display:grid;place-items:center;background:#20c875;color:#fff;text-decoration:none;font-size:1.5rem;box-shadow:0 8px 25px #0003}.whatsapp-float:hover{color:#fff;transform:translateY(-3px)}.notice{display:none}
+    @media(max-width:991.98px){.hero{padding-top:70px}.hero-visual{margin-top:25px}.navbar-collapse{padding:12px 0}}@media(max-width:575.98px){.section-pad{padding:65px 0}.hero{padding:60px 0}.hero-visual{min-height:335px}.care-card{min-height:310px;padding:24px}.floating{font-size:.85rem;padding:10px 12px}.float-a{top:0}.float-b{bottom:0}.appointment-band{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container py-2">
+    <a class="navbar-brand d-flex align-items-center" href="#home"><span class="brand-icon">✚</span>MediCare <span class="fw-normal ms-1">Plus</span></a>
+    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li><li class="nav-item"><a class="nav-link" href="#about">About</a></li><li class="nav-item"><a class="nav-link" href="#services">Services</a></li><li class="nav-item"><a class="nav-link" href="#doctors">Our Team</a></li><li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-2 mt-3 mt-lg-0"><a class="btn btn-teal" href="#appointment">Book Appointment ↗</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="eyebrow mb-3">Your health. Our priority.</div>
+          <h1>Care that puts<br><span>you first.</span></h1>
+          <p class="hero-copy mt-4 mb-4">Compassionate care, clear guidance, and a patient-first experience — because your health deserves thoughtful attention at every step.</p>
+          <div class="d-flex flex-wrap gap-3"><a href="#appointment" class="btn btn-teal">Book an Appointment →</a><a href="#services" class="btn btn-outline-teal">Explore Services</a></div>
+          <div class="row g-3 mt-4 pt-4 border-top">
+            <div class="col-4"><div class="fw-bold fs-4" style="color:var(--navy)">Care</div><div class="small text-secondary">Patient-first</div></div>
+            <div class="col-4"><div class="fw-bold fs-4" style="color:var(--navy)">Trust</div><div class="small text-secondary">Clear guidance</div></div>
+            <div class="col-4"><div class="fw-bold fs-4" style="color:var(--navy)">Wellness</div><div class="small text-secondary">Health focused</div></div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-visual">
+            <div class="floating float-a">♡ Your health matters<small>Care with compassion</small></div>
+            <div class="care-card"><div class="care-content"><span class="care-label">✦ Healthcare with heart</span><div class="medical-symbol">✚</div><h2 class="fw-bold mb-2">Here for your<br>health journey.</h2><p class="text-white-50 mb-0">Thoughtful care. Trusted support.</p></div></div>
+            <div class="floating float-b">✓ Care you can trust<small>Every step of the way</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad" id="services">
+    <div class="container">
+      <div class="text-center mx-auto mb-5" style="max-width:700px"><div class="eyebrow mb-3">Our services</div><h2 class="section-title">Care for every stage of life</h2><p class="section-copy mt-3">Explore our sample service categories. Contact the clinic to confirm the services actually available at your location.</p></div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4"><div class="service-card"><div class="icon-box">🩺</div><h3>General Consultation</h3><p>Discuss common health concerns and learn about appropriate next steps with a healthcare professional.</p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="service-card"><div class="icon-box">❤️</div><h3>Heart Health</h3><p>Ask about cardiovascular health assessments and preventive-care options, where available.</p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="service-card"><div class="icon-box">🧪</div><h3>Diagnostics & Tests</h3><p>Get information about available tests, preparation instructions, and result follow-up.</p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="service-card"><div class="icon-box">👨‍👩‍👧</div><h3>Family Healthcare</h3><p>Healthcare guidance for individuals and families across different life stages.</p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="service-card"><div class="icon-box">🌿</div><h3>Preventive Wellness</h3><p>Learn about healthy habits, routine checkups, and preventive care with a qualified provider.</p></div></div>
+        <div class="col-md-6 col-lg-4"><div class="service-card"><div class="icon-box">📋</div><h3>Health Checkups</h3><p>Ask about routine checkup packages and the options suited to your needs.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad soft" id="about">
+    <div class="container"><div class="about-panel"><div class="row align-items-center g-4 position-relative">
+      <div class="col-lg-7 position-relative" style="z-index:1"><div class="eyebrow mb-3" style="color:#8de2d7">About MediCare Plus</div><h2 class="section-title">Healthcare built around people.</h2><p class="section-copy mt-4">We believe healthcare should feel respectful, understandable, and centred on each patient. Our aim is to help people access information, communicate their concerns, and make informed decisions with qualified healthcare professionals.</p><ul class="check-list"><li><span class="check">✓</span><span>Patient-first communication and support</span></li><li><span class="check">✓</span><span>Respectful and welcoming experience</span></li><li><span class="check">✓</span><span>Clear information about services and appointments</span></li></ul><a class="btn btn-white mt-4" href="#contact">Contact Our Team →</a></div>
+      <div class="col-lg-5"><div class="about-art"><div class="health-circle"><div class="health-center">✚</div><div class="health-dot hd-a">♡</div><div class="health-dot hd-b">+</div><div class="health-dot hd-c">✓</div></div></div></div>
+    </div></div></div>
+  </section>
+
+  <section class="section-pad" id="doctors">
+    <div class="container">
+      <div class="row align-items-end g-3 mb-5"><div class="col-lg-7"><div class="eyebrow mb-3">Our healthcare team</div><h2 class="section-title">Meet the people behind your care</h2></div><div class="col-lg-5"><p class="section-copy mb-0">Use this section for verified clinician profiles. Replace all sample details before publishing.</p></div></div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4"><article class="doctor-card"><div class="doctor-avatar">👩‍⚕️</div><div class="doctor-body"><span class="doctor-tag">GENERAL MEDICINE</span><h3>Dr. [Doctor Name]</h3><p>Add verified qualifications, registration details, and areas of practice here.</p></div></article></div>
+        <div class="col-md-6 col-lg-4"><article class="doctor-card"><div class="doctor-avatar" style="background:linear-gradient(135deg,#fff1e9,#fffaf5)">👨‍⚕️</div><div class="doctor-body"><span class="doctor-tag">SPECIALIST</span><h3>Dr. [Doctor Name]</h3><p>Add the clinician’s real speciality, experience, and consultation availability.</p></div></article></div>
+        <div class="col-md-6 col-lg-4"><article class="doctor-card"><div class="doctor-avatar" style="background:linear-gradient(135deg,#edf0ff,#f9faff)">🧑‍⚕️</div><div class="doctor-body"><span class="doctor-tag">PATIENT SUPPORT</span><h3>[Team Member Name]</h3><p>Introduce your reception, care coordination, or patient-support team member.</p></div></article></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad soft">
+    <div class="container"><div class="text-center mx-auto mb-5" style="max-width:680px"><div class="eyebrow mb-3">Your visit</div><h2 class="section-title">Booking made simple</h2><p class="section-copy mt-3">A straightforward way to get in touch and ask about an appointment.</p></div>
+      <div class="row g-4"><div class="col-md-4"><div class="step-card"><div class="steps-number">STEP 01</div><h3>Send an enquiry</h3><p>Share your contact details and the type of appointment you need.</p></div></div><div class="col-md-4"><div class="step-card"><div class="steps-number">STEP 02</div><h3>Confirm details</h3><p>Contact the clinic to confirm availability, location, and any instructions.</p></div></div><div class="col-md-4"><div class="step-card"><div class="steps-number">STEP 03</div><h3>Attend your visit</h3><p>Follow the clinic’s confirmation and any guidance provided by its staff.</p></div></div></div>
+    </div>
+  </section>
+
+  <section class="py-5"><div class="container"><div class="appointment-band"><div><h2 class="mb-3">Your wellbeing matters.</h2><p>Need information about a service or appointment?<br>Our team is here to help you connect.</p></div><a href="#appointment" class="btn btn-white">Request an Appointment ↗</a></div></div></section>
+
+  <section class="section-pad pt-5" id="contact">
+    <div class="container"><div class="row g-5">
+      <div class="col-lg-5"><div class="eyebrow mb-3">Contact us</div><h2 class="section-title">We’re here to help.</h2><p class="section-copy mt-3">For appointments, clinic hours, or service information, contact the clinic using the verified details below.</p>
+        <div class="contact-row"><div class="icon-box">☎</div><div><strong>Phone</strong><span>+91 XXXXX XXXXX</span></div></div>
+        <div class="contact-row"><div class="icon-box">✉</div><div><strong>Email</strong><span>yourclinic@example.com</span></div></div>
+        <div class="contact-row"><div class="icon-box">⌖</div><div><strong>Clinic address</strong><span>Add the verified clinic address here</span></div></div>
+        <div class="contact-row"><div class="icon-box">◷</div><div><strong>Opening hours</strong><span>Add confirmed clinic hours here</span></div></div>
+        <p class="small text-secondary mt-4">For a medical emergency, contact your local emergency service immediately. This website is for general information and appointment enquiries, not emergency diagnosis or treatment.</p>
+      </div>
+      <div class="col-lg-7" id="appointment"><div class="contact-card"><h3 class="fw-bold mb-2" style="color:var(--navy)">Request an appointment</h3><p class="text-secondary mb-4">Submit your preferred contact details. Please do not include sensitive medical information in this demo form.</p>
+        <form id="appointmentForm"><div class="row g-3">
+          <div class="col-md-6"><label for="name" class="form-label">Full name *</label><input class="form-control" id="name" name="name" placeholder="Your name" required></div>
+          <div class="col-md-6"><label for="phone" class="form-label">Phone number *</label><input class="form-control" id="phone" name="phone" type="tel" inputmode="tel" pattern="[0-9+\-\s()]{7,18}" placeholder="Your phone number" required></div>
+          <div class="col-md-6"><label for="visitDate" class="form-label">Preferred date</label><input class="form-control" id="visitDate" name="visitDate" type="date"></div>
+          <div class="col-md-6"><label for="service" class="form-label">Service *</label><select class="form-select" id="service" name="service" required><option value="" disabled selected>Select a service</option><option>General Consultation</option><option>Heart Health</option><option>Diagnostics & Tests</option><option>Family Healthcare</option><option>Preventive Wellness</option><option>Health Checkups</option><option>Other / Not sure</option></select></div>
+          <div class="col-12"><label for="note" class="form-label">Additional note (optional)</label><textarea class="form-control" id="note" name="note" rows="3" placeholder="A brief scheduling note (please avoid sensitive health details)"></textarea></div>
+          <div class="col-12"><button class="btn btn-teal w-100" type="submit">Prepare Appointment Request →</button></div>
+          <div class="col-12"><div id="formNotice" class="alert alert-info notice mb-0" role="status"></div><p class="small text-secondary mb-0">Demo form: it opens a prefilled WhatsApp message and does not book or confirm an appointment automatically.</p></div>
+        </div></form>
+      </div></div>
+    </div></div>
+  </section>
+</main>
+<footer><div class="container"><div class="row align-items-center g-3"><div class="col-md-6"><a class="footer-brand" href="#home">MediCare Plus</a><div class="small mt-2">Care that comes first.</div></div><div class="col-md-6 text-md-end small">© <span id="year"></span> MediCare Plus. All rights reserved.<div class="mt-2"><a href="#home">Back to top ↑</a></div></div></div></div></footer>
+<!-- Replace 919999999999 with the clinic's real WhatsApp number before launch. -->
+<a class="whatsapp-float" href="https://wa.me/919999999999?text=Hello%20MediCare%20Plus%2C%20I%20would%20like%20to%20ask%20about%20an%20appointment." target="_blank" rel="noopener" aria-label="Contact MediCare Plus on WhatsApp" title="WhatsApp">✆</a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  // Keep the date picker from offering dates in the past.
+  document.getElementById("visitDate").min = new Date().toISOString().split("T")[0];
+  document.querySelectorAll("#mainNav .nav-link, #mainNav .btn").forEach(function(link){
+    link.addEventListener("click",function(){const nav=document.getElementById("mainNav");if(nav.classList.contains("show"))bootstrap.Collapse.getOrCreateInstance(nav).hide();});
+  });
+  document.getElementById("appointmentForm").addEventListener("submit",function(event){
+    event.preventDefault();
+    const form=event.currentTarget;
+    if(!form.checkValidity()){form.reportValidity();return;}
+    const d=new FormData(form);
+    const msg=[
+      "Hello MediCare Plus, I would like to request an appointment.",
+      "Name: "+d.get("name"),
+      "Phone: "+d.get("phone"),
+      "Preferred date: "+(d.get("visitDate")||"Flexible"),
+      "Service: "+d.get("service"),
+      "Scheduling note: "+(d.get("note")||"None")
+    ].join("\\n");
+    const notice=document.getElementById("formNotice");
+    notice.style.display="block";
+    notice.textContent="Your request is prepared. WhatsApp will open in a new tab; review and send it to the clinic. This does not confirm a booking.";
+    // SAMPLE NUMBER: replace with the clinic's real WhatsApp number, country code included.
+    window.open("https://wa.me/919999999999?text="+encodeURIComponent(msg),"_blank","noopener");
+  });
+</script>
+</body>
+</html>
